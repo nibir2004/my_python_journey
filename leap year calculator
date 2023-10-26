@@ -1,0 +1,15 @@
+year = int(input("input year here "))
+#The % symbol in Python is called the Modulo Operator.
+#It returns the remainder of dividing the left hand operand by right hand operand. 
+#It's used to get the remainder of a division problem.
+
+if year % 4 == 0: 
+  if year % 100 ==0:
+    if year % 400 ==0 :
+      print("leap year")
+    else:
+      print("not a leap year")
+  else:
+    print("leap year ")
+else:
+  print("not a leap year ")
