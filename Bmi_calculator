@@ -1,0 +1,23 @@
+height = float(input("enter your height in m: "))
+weight = float(input("enter weight in kg: "))
+#it will ask you to input your eight and height. You can write your weight in float numbers there will be no problem 
+
+BMI = round(weight / (height ** 2))
+
+#The round() function returns a floating point number that is a rounded version of the specified number, with the specified number of decimals.
+
+#now i starting the conditions
+
+if BMI<18.5 :
+  print(f"Your bmi is {BMI} ,You  are underweight😐 ")
+elif BMI < 25 :
+  print(f"Your Bmi is {BMI} , You have normal weight 😀😁")
+elif BMI < 30 : 
+  print(f"Your Bmi is {BMI} , Your are overweight😐  ")
+elif BMI <35:
+  print(f"Your Bmi is {BMI} ,You are obese 😥")  
+else:
+  print(f"you are Bmi is {BMI} , You are clinically obese ‼‼‼‼‼‼❌❌❌ ")
+
+
+#Thank you for your time
