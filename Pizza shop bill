@@ -1,0 +1,32 @@
+print("welcome to the tanvir pizzaa diliveries")    # There is another away of doing this I will add this again after this one 
+
+size = input ("what size pizza do you want? S,M,L ")
+add_pepporoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra chesse? Y or N ")
+if size == "S":
+  bill = 15
+  if add_pepporoni =="Y":
+    bill +=2
+  elif add_pepporoni =="N":
+    bill +=0
+  
+elif size =="M":
+  bill ==20
+  if add_pepporoni =="Y":
+    bill +=3
+  if add_pepporoni  =="N":
+    bill+=0
+  
+elif size =="L":
+  bill ==25 
+  if add_pepporoni =="Y":
+    bill +=3
+  elif add_pepporoni == "N":
+    bill += 0
+  
+if extra_cheese =="Y":
+  bill +=1
+elif extra_cheese =="N":     
+  bill +=0
+print(f"Your total bill is {bill}. ")
+  
