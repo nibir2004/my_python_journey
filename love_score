@@ -1,0 +1,28 @@
+#It's actually a game where this code take 2 name like your name and your lover name then count wach of word true first and seocnodly it will count letters love
+#after that it will just add 2 of them separately that becomes the love score 
+#example first_name = tanvir 
+#second_name = israt
+#score 41 because true = 4 
+#and love = 1  # i think this wiill be funny for those couple who are like coke and mentos ha ha 
+
+print("welcome to the calculator")
+name1 = input("what is your name? \n")
+name2 = input("what is their name? \n")
+name_together = (str(name1) + str(name2)).lower()
+a=name_together.count("t")
+b=name_together.count("r")
+c=name_together.count("u")
+d=name_together.count("e")
+e=name_together.count("l")
+f=name_together.count("o") 
+g=name_together.count("v")
+h=name_together.count("e")
+TRUE_ =(a + b + c + d )
+false_ = (e + f + g + h)
+love_score =int(str(TRUE_) + str(false_))
+if (love_score < 10) or (love_score > 90) :
+  print(f"Your score is {love_score}, you go together like coke and mentos ")
+elif (love_score >= 40) and (love_score <= 50) :
+  print(f"your love score is {love_score}, you are alright together")
+else:
+  print(f"your score is {love_score}")
