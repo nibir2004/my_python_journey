@@ -1,0 +1,16 @@
+import random 
+
+
+name_string = input("Give the names separated by comma ")       # it will ask you to put the names who are there 
+
+
+
+names = name_string.split(", ")                        # this one will convert your name which you provided by comma will turn into a list 
+
+
+payer = random.choice(names)                 # this code will pick  a person randomly    
+
+
+
+print(f"{payer} is going to buy the meal today  ")   #  here is our famous f string function by which you able to out any information by defining a function and add here by using second bracket 
+#enjoy_your_random_bill_pay 
