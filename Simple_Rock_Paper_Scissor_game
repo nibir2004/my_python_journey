@@ -1,0 +1,56 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''               
+                                          # This design were given by our instructor Dr Angela Yu in 100 days of python bootcamp pro 2023
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+game_images = [rock, paper, scissors]                                 # This is my version of rock paper scissor there are a lot of way to do it but I wanted simple one so here it's
+import random
+user_choice = int(input("what do you choose? type 0 for Rock , 1 For Paper , 2 for Scissors \n"))
+if user_choice >2 or user_choice < 0 :
+	print("invalid choice")
+	quit()
+print(game_images[user_choice])
+
+computer_choice = random.randint(0, 2)
+print("computer choose:")
+print(game_images[computer_choice])
+if user_choice == 0 and computer_choice == 1:
+		print("you lose")
+elif user_choice == 1 and computer_choice == 2:
+	print("You win ")
+		
+elif user_choice == 0 and computer_choice ==2:
+	print("You win ")
+		
+elif user_choice == 2 and computer_choice == 0:
+	print("you lose")
+		
+elif user_choice == 2 and computer_choice == 2:
+	print("you lose")
+		
+elif user_choice == 2 and computer_choice == 1:
+	print("You win")
+elif user_choice == computer_choice :
+	print("tie ")
+
