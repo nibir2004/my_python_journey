@@ -1,0 +1,14 @@
+student_scores= input("Input a lot of student scores ").split()       #This will split the input string into a list of individual scores.
+
+for n in range(0, len(student_scores)):
+	student_scores[n] = int(student_scores[n])
+                                               #You have to input the scores here by adding space like 123 124 146 
+                                               #Then it will give you the output The Highest score is 146 
+print(student_scores)                          # ENJOY
+
+highest_scores = 0
+for score in student_scores:  
+	if score > highest_scores:
+		highest_scores = score
+		
+print(f"The Highest score in the class is {highest_scores}")
